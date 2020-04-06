@@ -70,5 +70,11 @@ namespace ProductApps
         {
             TotalPayment = (Price * Quantity) + 25;
         }
+
+        //calc charge with wrapping
+        public void calWrapCharge()
+        {
+            TotalPayment = (Price * Quantity) + 25 + 5;
+        }
     }
 }

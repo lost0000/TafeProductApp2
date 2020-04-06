@@ -38,6 +38,9 @@ namespace ProductApps
                 cProduct.calTotalCharge();
                 totalChargeTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
 
+                cProduct.calWrapCharge();
+                totalChargeWrapTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
+
 
 
 
@@ -55,6 +58,7 @@ namespace ProductApps
             quantityTextBox.Text = "";
             totalPaymentTextBlock.Text = "";
             totalChargeTextBlock.Text = "";
+            totalChargeWrapTextBlock.Text = "";
         }
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
